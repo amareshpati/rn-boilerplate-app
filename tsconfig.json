@@ -1,8 +1,79 @@
 {
   "extends": "@react-native/typescript-config",
   "compilerOptions": {
-    "types": ["jest"]
+    "types": [
+      "jest"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@images/*": [
+        "src/assets/images/*"
+      ],
+      "@icons/*": [
+        "src/assets/icons/*"
+      ],
+      "@fonts/*": [
+        "src/assets/fonts/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@theme/*": [
+        "src/styles/theme/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@features/*": [
+        "src/features/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@context/*": [
+        "src/context/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@api/*": [
+        "src/services/api/*"
+      ],
+      "@permissions/*": [
+        "src/services/permissions/*"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@storage/*": [
+        "src/storage/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@locale/*": [
+        "src/locale/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/Pods"
+  ]
 }
