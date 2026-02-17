@@ -31,10 +31,14 @@ export const darkTheme: Theme = {
     },
 
     status: {
-        success: colors.primary[400],     // Softer on dark
-        error: colors.secondary[500],
-        warning: colors.secondary[400],
-        info: colors.primary[300],
+        success: colors.success[400],
+        successBackground: colors.success[900],
+        error: colors.danger[400],
+        errorBackground: colors.danger[900],
+        warning: colors.warning[400],
+        warningBackground: colors.warning[900],
+        info: colors.info[400],
+        infoBackground: colors.info[900],
     },
 
     border: {
@@ -53,4 +57,10 @@ export const darkTheme: Theme = {
         border: colors.border.secondary,
         placeholder: colors.text.tertiary,
     },
+
+    common: {
+        white: colors.common.white,
+        black: colors.common.black,
+        transparent: colors.common.transparent,
+    }
 };

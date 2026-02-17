@@ -31,10 +31,14 @@ export const lightTheme: Theme = {
     },
 
     status: {
-        success: colors.primary[500],    // Reuse brand (clean + consistent)
-        error: colors.secondary[500],    // Magenta for destructive
-        warning: colors.secondary[400],  // Softer accent
-        info: colors.primary[400],
+        success: colors.success[600],
+        successBackground: colors.success[50],
+        error: colors.danger[600],
+        errorBackground: colors.danger[50],
+        warning: colors.warning[600],
+        warningBackground: colors.warning[50],
+        info: colors.info[600],
+        infoBackground: colors.info[50],
     },
 
     border: {
@@ -53,4 +57,10 @@ export const lightTheme: Theme = {
         border: colors.neutral[300],
         placeholder: colors.neutral[400],
     },
+
+    common: {
+        white: colors.common.white,
+        black: colors.common.black,
+        transparent: colors.common.transparent,
+    }
 };

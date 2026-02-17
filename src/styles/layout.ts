@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
  * Reusable layout utility styles
  * Note: Consider migrating to component-specific styles for better maintainability
  */
-const Layouts = StyleSheet.create({
+export const Layouts = StyleSheet.create({
     // POSITIONING
     absolute: {
         position: 'absolute',
@@ -156,4 +156,3 @@ const Layouts = StyleSheet.create({
     },
 });
 
-export default Layouts;

@@ -34,9 +34,16 @@ export interface Theme {
     // Semantic states (grouped — important)
     status: {
         success: string;
+        successBackground: string;
+
         error: string;
+        errorBackground: string;
+
         warning: string;
+        warningBackground: string;
+
         info: string;
+        infoBackground: string;
     };
 
     // Borders & dividers
@@ -58,4 +65,9 @@ export interface Theme {
         border: string;
         placeholder: string;
     };
+    common: {
+        white: string,
+        black: string,
+        transparent: string,
+    }
 }

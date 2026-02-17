@@ -1,14 +1,14 @@
 import React, { memo } from 'react';
 import { Text as RNText, TextProps as RNTextProps } from 'react-native';
-import { useTheme } from '../../context/ThemeContext';
-import Typography, { TypographyVariant } from '../../styles/typography';
+import Typography, { TypographyVariant } from '@styles/typography';
+import { useTheme } from '@hooks/useTheme';
 
 interface AppTextProps extends RNTextProps {
     variant?: TypographyVariant;
     color?: string;
 }
 
-const AppText = ({
+export const AppText = ({
     variant = 'bodyMedium',
     color,
     style,
@@ -28,4 +28,3 @@ const AppText = ({
     );
 };
 
-export default memo(AppText);

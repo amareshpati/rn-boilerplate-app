@@ -29,6 +29,63 @@ export const colors = {
         DEFAULT: '#BE1ADB',
     },
 
+    danger: {
+        50: '#FEEAEA',
+        100: '#FBCFCF',
+        200: '#F8B1B1',
+        300: '#F38A8A',
+        400: '#EE6464',
+        500: '#E53935', // Base error
+        600: '#C62828',
+        700: '#B71C1C',
+        800: '#8E1616',
+        900: '#661010',
+        DEFAULT: '#E53935',
+    },
+
+    warning: {
+        50: '#FFFBEB',
+        100: '#FEF3C7',
+        200: '#FDE68A',
+        300: '#FCD34D',
+        400: '#FBBF24',
+        500: '#F59E0B', // Base warning
+        600: '#D97706',
+        700: '#B45309',
+        800: '#92400E',
+        900: '#78350F',
+        DEFAULT: '#F59E0B',
+    },
+
+    success: {
+        50: '#E8F5E9',
+        100: '#C8E6C9',
+        200: '#A5D6A7',
+        300: '#81C784',
+        400: '#66BB6A',
+        500: '#2E7D32', // Base success
+        600: '#1B5E20',
+        700: '#145A1F',
+        800: '#0F3E15',
+        900: '#0A2A0E',
+        DEFAULT: '#2E7D32',
+    },
+
+
+    info: {
+        50: '#E3F2FD',
+        100: '#BBDEFB',
+        200: '#90CAF9',
+        300: '#64B5F6',
+        400: '#42A5F5',
+        500: '#2196F3', // Base info
+        600: '#1E88E5',
+        700: '#1976D2',
+        800: '#1565C0',
+        900: '#0D47A1',
+        DEFAULT: '#2196F3',
+    },
+
     // Neutral/Grayscale (dark theme optimized)
     neutral: {
         50: '#FFFFFF',

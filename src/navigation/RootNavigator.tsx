@@ -1,14 +1,14 @@
-import { ROUTES } from '../constants/routes';
-import { HomeScreen, TestScreen } from '../features/screens';
+import { HomeScreen, SettingScreen } from '@/features';
+import { ROUTES } from '@constants/routes';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
   return (
-    <Stack.Navigator initialRouteName="Home" >
+    <Stack.Navigator initialRouteName={ROUTES.HOME} >
       <Stack.Screen name={ROUTES.HOME} component={HomeScreen} options={{ headerShown: false }} />
-      <Stack.Screen name={ROUTES.TEST} component={TestScreen} options={{ headerShown: false }} />
+      <Stack.Screen name={ROUTES.SETTINGS} component={SettingScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };
