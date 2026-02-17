@@ -122,7 +122,7 @@ export const colors = {
 
     // Borders & dividers
     border: {
-        primary: '#191924',
+        primary: '#3b3b50ff',
         secondary: '#171721',
         subtle: '#111111',
         DEFAULT: '#191924',

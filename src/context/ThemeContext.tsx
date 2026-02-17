@@ -1,12 +1,16 @@
 import { createContext } from 'react';
-import { ColorSchemeName } from 'react-native';
 import { Theme } from '@styles/theme/types';
 
-export interface ThemeContextValue {
+type ThemeMode = 'light' | 'dark' | 'system';
+
+interface ThemeContextType {
   theme: Theme;
-  scheme: ColorSchemeName;
+  scheme: 'light' | 'dark';
+  themeMode: ThemeMode;
+  setThemeMode: (mode: ThemeMode) => void;
+  toggleTheme: () => void;
 }
 
-export const ThemeContext = createContext<
-  ThemeContextValue | undefined
->(undefined);
+export const ThemeContext = createContext<ThemeContextType>(
+  {} as ThemeContextType
+);

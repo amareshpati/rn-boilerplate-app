@@ -1,5 +1,5 @@
+import { ROUTES } from '@/constants';
 import { HomeScreen, SettingScreen } from '@/features';
-import { ROUTES } from '@constants/routes';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
