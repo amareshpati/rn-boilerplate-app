@@ -14,6 +14,13 @@ import { AppTextInput } from '@/components/base/AppTextInput';
 import { AppPressable } from '@/components/base/AppPressable';
 import { AppView } from '@/components/base/AppView';
 import { Layouts } from '@/styles';
+import {
+    isValidEmail,
+    isValidName,
+    isValidPassword,
+    isValidPhoneNumber,
+    isValidPincode
+} from '@/utils';
 
 type ValidationType =
     | 'none'
@@ -107,34 +114,32 @@ export const AppCustomInput: React.FC<AppCustomInputProps> = ({
 
         switch (validationType) {
             case 'name':
-                if (text.length < 2) {
+                if (!isValidName(text)) {
                     return 'Invalid name';
                 }
                 break;
 
             case 'email':
-                const emailRegex =
-                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(text)) {
+                if (!isValidEmail(text)) {
                     return 'Invalid email address';
                 }
                 break;
 
             case 'number':
-                if (!/^\d{10}$/.test(text)) {
+                if (!isValidPhoneNumber(text)) {
                     return 'Must be exactly 10 digits';
                 }
                 break;
 
             case 'pincode':
-                if (!/^\d{6}$/.test(text)) {
+                if (!isValidPincode(text)) {
                     return 'Invalid pincode';
                 }
                 break;
 
             case 'password':
-                if (text.length < 6) {
-                    return 'Password must be at least 6 characters';
+                if (!isValidPassword(text)) {
+                    return 'Password must be at least 8 characters';
                 }
                 break;
         }

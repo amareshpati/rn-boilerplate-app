@@ -5,6 +5,13 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "node:clean": "rm -rf node_modules && npm cache clean --force && npm install --f",
+    "ios:Pod:Reset": "cd ios && pod deintegrate && pod setup && pod install",
+    "podInstall": "cd ios && pod install",
+    "ios:clean": "cd ios && rm -rf ~/Library/Caches/CocoaPods && rm -rf Pods && rm -rf ~/Library/Developer/Xcode/DerivedData/* && npm run ios:Pod:Reset",
+    "open-xcode": "cd ios && open featureshub.xcworkspace",
+    "open-apk": "open ./android/app/build/outputs/apk/",
+    "open-bundle": "open ./android/app/build/outputs/bundle/productionRelease",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -15,6 +22,9 @@
     "@react-navigation/native-stack": "^7.12.0",
     "react": "19.2.3",
     "react-native": "0.84.0",
+    "react-native-config": "^1.6.1",
+    "react-native-mmkv": "^4.1.2",
+    "react-native-nitro-modules": "^0.33.9",
     "react-native-safe-area-context": "^5.6.2",
     "react-native-screens": "^4.23.0",
     "react-native-svg": "^15.15.3"

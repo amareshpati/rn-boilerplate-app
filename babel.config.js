@@ -24,6 +24,7 @@ module.exports = {
           '@api': './src/services/api',
           '@permissions': './src/services/permissions',
 
+          '@config': './src/config',
           '@storage': './src/storage',
           '@styles': './src/styles',
           '@types': './src/types',

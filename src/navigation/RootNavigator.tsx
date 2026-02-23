@@ -1,8 +1,9 @@
 import { ROUTES } from '@/constants';
 import { HomeScreen, SettingScreen } from '@/features';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import type { RootStackParamList } from './navigation.types';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootNavigator = () => {
   return (
