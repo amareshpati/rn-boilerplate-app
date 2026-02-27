@@ -18,5 +18,4 @@ const App = () => {
         </AppSafeAreaProvider>
     );
 }
-
 export default App;
