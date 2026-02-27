@@ -47,7 +47,7 @@ export const AppToggle: React.FC<AppToggleProps> = ({
             duration: 100,
             useNativeDriver: true,
         }).start();
-    }, [value]);
+    }, [value, animation]);
 
     const translateX = animation.interpolate({
         inputRange: [0, 1],

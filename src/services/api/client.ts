@@ -52,7 +52,7 @@ async function request<T>(
     if (authenticated) {
         const token = getString(STORAGE_KEYS.AUTH_TOKEN);
         if (token) {
-            requestHeaders['Authorization'] = `Bearer ${token}`;
+            requestHeaders.Authorization = `Bearer ${token}`;
         }
     }
 

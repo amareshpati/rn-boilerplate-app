@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { Text as RNText, TextProps as RNTextProps } from 'react-native';
 import Typography, { TypographyVariant } from '@styles/typography';
 import { useTheme } from '@hooks/useTheme';

@@ -48,7 +48,7 @@ export const AppRadioButton: React.FC<AppRadioButtonProps> = ({
             duration: 100,
             useNativeDriver: true,
         }).start();
-    }, [value]);
+    }, [value, animation]);
 
     const scale = animation.interpolate({
         inputRange: [0, 1],

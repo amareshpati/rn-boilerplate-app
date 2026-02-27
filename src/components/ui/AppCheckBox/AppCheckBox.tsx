@@ -51,7 +51,7 @@ export const AppCheckBox: React.FC<AppCheckBoxProps> = ({
             duration: 100,
             useNativeDriver: true,
         }).start();
-    }, [value]);
+    }, [value, animation]);
 
     const scale = animation.interpolate({
         inputRange: [0, 1],

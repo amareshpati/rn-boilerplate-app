@@ -1,3 +1,28 @@
 module.exports = {
   preset: 'react-native',
+  setupFilesAfterEnv: ['./jest.setup.js'],
+  transformIgnorePatterns: [
+    'node_modules/(?!(react-native|@react-native|@react-navigation|@react-navigation|@react-native-community|react-native-config|react-native-mmkv|react-native-nitro-modules|react-native-safe-area-context|react-native-screens|react-native-svg)/)',
+  ],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@assets/(.*)$': '<rootDir>/src/assets/$1',
+    '^@images/(.*)$': '<rootDir>/src/assets/images/$1',
+    '^@icons/(.*)$': '<rootDir>/src/assets/icons/$1',
+    '^@fonts/(.*)$': '<rootDir>/src/assets/fonts/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@constants/(.*)$': '<rootDir>/src/constants/$1',
+    '^@context/(.*)$': '<rootDir>/src/context/$1',
+    '^@features/(.*)$': '<rootDir>/src/features/$1',
+    '^@hooks/(.*)$': '<rootDir>/src/hooks/$1',
+    '^@navigation/(.*)$': '<rootDir>/src/navigation/$1',
+    '^@services/(.*)$': '<rootDir>/src/services/$1',
+    '^@api/(.*)$': '<rootDir>/src/services/api/$1',
+    '^@permissions/(.*)$': '<rootDir>/src/services/permissions/$1',
+    '^@config/(.*)$': '<rootDir>/src/config/$1',
+    '^@storage/(.*)$': '<rootDir>/src/storage/$1',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
+    '^@types/(.*)$': '<rootDir>/src/types/$1',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+  },
 };
